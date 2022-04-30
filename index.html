@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound interest loan</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="main">
+        <div class="formdiv">
+            <form action="">
+                <label for="">Amount</label>
+                <input id="loanInput" type="number" placeholder="Input your loan amount">
+                <label for="">Percentage</label>
+                <input id="perIn" type="number" step="0.1" placeholder="Input your percentage">
+                <label for="">Year (s)</label>
+                <input id="monIn" type="number" placeholder="Number of year(s)">
+                <div class="buttt">
+                    <button class="btCheck">Check</button>
+                    <button class="btFresh">Refresh</button>
+                </div>
+
+            </form>
+        </div>
+        
+        <div class="history">
+             <h3 class="hh">Amount  (₦)</h3>
+             <hr>
+             <p id="displ1"></p>
+            </div>
+        <div class="history">
+            <h3 class="hh">Percentage (%)</h3>
+            <hr>
+            <p id="displ2"></p>
+        </div>
+        <div class="history">
+            <h3 class="hh">Year (s)</h3>
+            <hr>
+            <p id="displ3"></p>
+        </div>
+        <div class="total">
+            <h3 id="result"></h3>
+            <p id="notice" style="margin-top: 30px; color: white; font-family: 'Montserrat', sans-serif;
+            font-size: .9rem;"></p>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
